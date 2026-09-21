@@ -16,7 +16,13 @@ NSLSR,official (leaky),small,adversarial,best,test,pgd20,1,0.9291,,0.8988,,0.930
 NSLSR,official (leaky),small,adversarial,last,test,clean,1,0.9854,,0.9892,,0.9944,,0.7655,,,aggregate_results_table2.csv
 NSLSR,official (leaky),small,adversarial,last,test,pgd20,1,0.9411,,0.8953,,0.9338,,0.5492,,,aggregate_results_table2.csv
 NSLSR,leakage-safe (segment),nano,standard,best,test,clean,1,0.8697,,0.8384,,0.9311,,0.6483,,,aggregate_results_table2.csv
+NSLSR,leakage-safe (segment),nano,standard,best,test,clean,1,0.8697,,0.8384,,0.9311,,0.6483,,,defense_matrix_results_test.csv
 NSLSR,leakage-safe (segment),nano,standard,best,test,pgd20,1,0.0002,,0.0233,,0.0000,,0.0000,,,aggregate_results_table2.csv
+NSLSR,leakage-safe (segment),nano,standard,best,test,pgd20,3,0.0002,0.0001,0.0295,0.0150,0.0000,0.0000,0.0000,0.0000,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,standard,best,test,snua_go_weak,3,0.6471,0.0148,0.5356,0.0094,0.5583,0.0061,0.2622,0.0047,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,standard,best,test,snua_go_medium,3,0.3806,0.0082,0.3922,0.0210,0.2366,0.0106,0.0861,0.0046,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,standard,best,test,aria_medium,3,0.8657,0.0169,0.8240,0.0255,0.9218,0.0018,0.6355,0.0007,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,standard,best,test,combined_medium,3,0.3690,0.0055,0.3907,0.0335,0.2406,0.0142,0.0863,0.0027,,defense_matrix_results_test.csv
 NSLSR,leakage-safe (segment),nano,standard,best,val,clean,1,0.7569,,0.6250,,0.6968,,0.3795,,,aggregate_results_table2.csv
 NSLSR,leakage-safe (segment),nano,standard,best,val,clean,1,0.7538,,0.6256,,0.6941,,0.3780,,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,standard,best,val,pgd20,3,0.0004,0.0000,0.0234,0.0123,0.0000,0.0000,0.0000,0.0000,checkpoint selected on this split,defense_matrix_results.csv
@@ -33,24 +39,48 @@ NSLSR,leakage-safe (segment),nano,adversarial,best,val,clean,1,0.7864,,0.5213,,0
 NSLSR,leakage-safe (segment),nano,adversarial,last,test,clean,1,0.9463,,0.8558,,0.9195,,0.6616,,,aggregate_results_table2.csv
 NSLSR,leakage-safe (segment),nano,adversarial,last,test,pgd20,1,0.6116,,0.5023,,0.4756,,0.2248,,,aggregate_results_table2.csv
 NSLSR,leakage-safe (segment),nano,adversarial,last,val,clean,1,0.6939,,0.5518,,0.5750,,0.3344,,,aggregate_results_table2.csv
+NSLSR,leakage-safe (segment),nano,pgd_at,last,test,clean,1,0.9463,,0.8558,,0.9195,,0.6616,,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,pgd_at,last,test,pgd20,3,0.6485,0.0296,0.4992,0.0054,0.4770,0.0059,0.2185,0.0005,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,pgd_at,last,test,snua_go_weak,3,0.8827,0.0127,0.6855,0.0083,0.7709,0.0025,0.4866,0.0011,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,pgd_at,last,test,snua_go_medium,3,0.8376,0.0055,0.6043,0.0127,0.6631,0.0044,0.3699,0.0104,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,pgd_at,last,test,aria_medium,3,0.9453,0.0046,0.8477,0.0018,0.9163,0.0010,0.6555,0.0011,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,pgd_at,last,test,combined_medium,3,0.8520,0.0088,0.5984,0.0097,0.6623,0.0075,0.3652,0.0072,,defense_matrix_results_test.csv
 NSLSR,leakage-safe (segment),nano,pgd_at,last,val,clean,1,0.6949,,0.5486,,0.5728,,0.3354,,,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,pgd_at,last,val,pgd20,3,0.5977,0.0176,0.2785,0.0018,0.2212,0.0021,0.0859,0.0010,,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,pgd_at,last,val,snua_go_weak,3,0.6869,0.0102,0.3903,0.0029,0.4090,0.0026,0.2044,0.0019,,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,pgd_at,last,val,snua_go_medium,3,0.5538,0.0526,0.3387,0.0139,0.2938,0.0028,0.1338,0.0015,,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,pgd_at,last,val,aria_medium,3,0.7018,0.0052,0.5301,0.0083,0.5700,0.0032,0.3289,0.0020,,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,pgd_at,last,val,combined_medium,3,0.5445,0.0200,0.3207,0.0058,0.2713,0.0049,0.1270,0.0033,,defense_matrix_results.csv
+NSLSR,leakage-safe (segment),nano,random_swir_aug,robust_best,test,clean,1,0.9250,,0.8600,,0.9481,,0.6850,,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,random_swir_aug,robust_best,test,pgd20,3,0.0001,0.0001,0.0031,0.0027,0.0000,0.0000,0.0000,0.0000,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,random_swir_aug,robust_best,test,snua_go_weak,3,0.7890,0.0035,0.6834,0.0060,0.7328,0.0081,0.3940,0.0043,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,random_swir_aug,robust_best,test,snua_go_medium,3,0.5705,0.0315,0.5860,0.0123,0.4923,0.0233,0.2103,0.0087,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,random_swir_aug,robust_best,test,aria_medium,3,0.9008,0.0082,0.8695,0.0126,0.9443,0.0004,0.6762,0.0026,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,random_swir_aug,robust_best,test,combined_medium,3,0.5754,0.0234,0.6093,0.0093,0.5000,0.0116,0.2124,0.0119,,defense_matrix_results_test.csv
 NSLSR,leakage-safe (segment),nano,random_swir_aug,robust_best,val,clean,1,0.7734,,0.5701,,0.6399,,0.3532,,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,random_swir_aug,robust_best,val,pgd20,3,0.0002,0.0000,0.0193,0.0035,0.0000,0.0000,0.0000,0.0000,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,random_swir_aug,robust_best,val,snua_go_weak,3,0.5835,0.0037,0.3882,0.0047,0.3562,0.0057,0.1673,0.0011,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,random_swir_aug,robust_best,val,snua_go_medium,3,0.4390,0.0211,0.3648,0.0035,0.2373,0.0056,0.0952,0.0017,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,random_swir_aug,robust_best,val,aria_medium,3,0.7836,0.0205,0.5629,0.0139,0.6338,0.0025,0.3466,0.0013,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,random_swir_aug,robust_best,val,combined_medium,3,0.4553,0.0058,0.3678,0.0017,0.2409,0.0065,0.0980,0.0010,checkpoint selected on this split,defense_matrix_results.csv
+NSLSR,leakage-safe (segment),nano,snua_at,robust_best,test,clean,1,0.8441,,0.9318,,0.9424,,0.6236,,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,snua_at,robust_best,test,pgd20,3,0.0003,0.0001,0.0047,0.0000,0.0000,0.0000,0.0000,0.0000,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,snua_at,robust_best,test,snua_go_weak,3,0.8864,0.0003,0.8140,0.0000,0.9010,0.0001,0.5626,0.0004,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,snua_at,robust_best,test,snua_go_medium,3,0.8699,0.0012,0.7728,0.0048,0.8514,0.0009,0.4971,0.0004,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,snua_at,robust_best,test,aria_medium,3,0.8610,0.0379,0.8915,0.0474,0.9374,0.0009,0.6144,0.0019,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,snua_at,robust_best,test,combined_medium,3,0.8721,0.0055,0.7690,0.0027,0.8413,0.0036,0.4884,0.0034,,defense_matrix_results_test.csv
 NSLSR,leakage-safe (segment),nano,snua_at,robust_best,val,clean,1,0.7901,,0.5701,,0.6581,,0.3682,,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,snua_at,robust_best,val,pgd20,3,0.0006,0.0002,0.0081,0.0035,0.0000,0.0000,0.0000,0.0000,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,snua_at,robust_best,val,snua_go_weak,3,0.8198,0.0090,0.5080,0.0033,0.6060,0.0010,0.3310,0.0005,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,snua_at,robust_best,val,snua_go_medium,3,0.7902,0.0069,0.4705,0.0018,0.5524,0.0009,0.2983,0.0004,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,snua_at,robust_best,val,aria_medium,3,0.7916,0.0106,0.5701,0.0030,0.6490,0.0010,0.3612,0.0018,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,snua_at,robust_best,val,combined_medium,3,0.7724,0.0236,0.4627,0.0062,0.5391,0.0027,0.2910,0.0011,checkpoint selected on this split,defense_matrix_results.csv
+NSLSR,leakage-safe (segment),nano,mixed_swir_at,robust_best,test,clean,1,0.9403,,0.8791,,0.9499,,0.6610,,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,mixed_swir_at,robust_best,test,pgd20,3,0.0002,0.0002,0.0047,0.0000,0.0000,0.0000,0.0000,0.0000,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,mixed_swir_at,robust_best,test,snua_go_weak,3,0.9276,0.0030,0.8654,0.0006,0.9187,0.0003,0.6137,0.0009,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,mixed_swir_at,robust_best,test,snua_go_medium,3,0.9052,0.0046,0.8354,0.0028,0.8872,0.0003,0.5605,0.0020,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,mixed_swir_at,robust_best,test,aria_medium,3,0.9358,0.0043,0.8807,0.0054,0.9446,0.0041,0.6529,0.0008,,defense_matrix_results_test.csv
+NSLSR,leakage-safe (segment),nano,mixed_swir_at,robust_best,test,combined_medium,3,0.9081,0.0073,0.8268,0.0083,0.8763,0.0028,0.5496,0.0024,,defense_matrix_results_test.csv
 NSLSR,leakage-safe (segment),nano,mixed_swir_at,robust_best,val,clean,1,0.7212,,0.5793,,0.6190,,0.3684,,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,mixed_swir_at,robust_best,val,pgd20,3,0.0003,0.0001,0.0102,0.0047,0.0000,0.0000,0.0000,0.0000,checkpoint selected on this split,defense_matrix_results.csv
 NSLSR,leakage-safe (segment),nano,mixed_swir_at,robust_best,val,snua_go_weak,3,0.7281,0.0004,0.4984,0.0015,0.5693,0.0002,0.3329,0.0005,checkpoint selected on this split,defense_matrix_results.csv
