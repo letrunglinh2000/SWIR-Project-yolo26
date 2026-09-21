@@ -1,0 +1,114 @@
+{
+  "yolo26n_nslsr_safesplit__best__clean": {
+    "metrics/precision(B)": 0.8697219464197339,
+    "metrics/recall(B)": 0.8383717700341197,
+    "metrics/mAP50(B)": 0.9311314838006097,
+    "metrics/mAP50-95(B)": 0.648270509258704,
+    "fitness": 0.648270509258704
+  },
+  "yolo26n_nslsr_safesplit__best__pgd20": {
+    "metrics/precision(B)": 0.0001789100797938956,
+    "metrics/recall(B)": 0.023255813953488372,
+    "metrics/mAP50(B)": 4.739516190187306e-06,
+    "metrics/mAP50-95(B)": 6.490148362916347e-07,
+    "fitness": 6.490148362916347e-07
+  },
+  "yolo26n_nslsr_safesplit__last__clean": {
+    "metrics/precision(B)": 0.959050929255952,
+    "metrics/recall(B)": 0.8046511627906977,
+    "metrics/mAP50(B)": 0.9062111318242531,
+    "metrics/mAP50-95(B)": 0.6485635890426513,
+    "fitness": 0.6485635890426513
+  },
+  "yolo26n_nslsr_safesplit__last__pgd20": {
+    "metrics/precision(B)": 0.00018294914013904133,
+    "metrics/recall(B)": 0.018604651162790697,
+    "metrics/mAP50(B)": 3.6997451286689143e-06,
+    "metrics/mAP50-95(B)": 4.475419965777198e-07,
+    "fitness": 4.475419965777198e-07
+  },
+  "yolo26s_nslsr_safesplit__best__clean": {
+    "metrics/precision(B)": 0.8490511857971076,
+    "metrics/recall(B)": 0.8110174908044792,
+    "metrics/mAP50(B)": 0.8979241271903725,
+    "metrics/mAP50-95(B)": 0.6099374563279768,
+    "fitness": 0.6099374563279768
+  },
+  "yolo26s_nslsr_safesplit__best__pgd20": {
+    "metrics/precision(B)": 0.0,
+    "metrics/recall(B)": 0.0,
+    "metrics/mAP50(B)": 0.0,
+    "metrics/mAP50-95(B)": 0.0,
+    "fitness": 0.0
+  },
+  "yolo26s_nslsr_safesplit__last__clean": {
+    "metrics/precision(B)": 0.8792477340415255,
+    "metrics/recall(B)": 0.914415643555948,
+    "metrics/mAP50(B)": 0.9397660619733218,
+    "metrics/mAP50-95(B)": 0.6882889706630306,
+    "fitness": 0.6882889706630306
+  },
+  "yolo26s_nslsr_safesplit__last__pgd20": {
+    "metrics/precision(B)": 7.89527011106255e-05,
+    "metrics/recall(B)": 0.004651162790697674,
+    "metrics/mAP50(B)": 1.1964584828906438e-06,
+    "metrics/mAP50-95(B)": 1.1964584828906438e-07,
+    "fitness": 1.1964584828906438e-07
+  },
+  "yolo26n_nslsr_pgd_safesplit__best__clean": {
+    "metrics/precision(B)": 0.8753864452376982,
+    "metrics/recall(B)": 0.8465116279069768,
+    "metrics/mAP50(B)": 0.9299120436685657,
+    "metrics/mAP50-95(B)": 0.6225190227502606,
+    "fitness": 0.6225190227502606
+  },
+  "yolo26n_nslsr_pgd_safesplit__best__pgd20": {
+    "metrics/precision(B)": 0.48805523410111745,
+    "metrics/recall(B)": 0.413953488372093,
+    "metrics/mAP50(B)": 0.37256420757474673,
+    "metrics/mAP50-95(B)": 0.12849391569507904,
+    "fitness": 0.12849391569507904
+  },
+  "yolo26n_nslsr_pgd_safesplit__last__clean": {
+    "metrics/precision(B)": 0.946338406523224,
+    "metrics/recall(B)": 0.8558139534883721,
+    "metrics/mAP50(B)": 0.9194518682283925,
+    "metrics/mAP50-95(B)": 0.661621773695487,
+    "fitness": 0.661621773695487
+  },
+  "yolo26n_nslsr_pgd_safesplit__last__pgd20": {
+    "metrics/precision(B)": 0.6115814943552487,
+    "metrics/recall(B)": 0.5023255813953489,
+    "metrics/mAP50(B)": 0.4755894703130095,
+    "metrics/mAP50-95(B)": 0.22480708054347046,
+    "fitness": 0.22480708054347046
+  },
+  "yolo26s_nslsr_pgd_safesplit__best__clean": {
+    "metrics/precision(B)": 0.9330928678783298,
+    "metrics/recall(B)": 0.7783923267596075,
+    "metrics/mAP50(B)": 0.9159863584142411,
+    "metrics/mAP50-95(B)": 0.6169034367832678,
+    "fitness": 0.6169034367832678
+  },
+  "yolo26s_nslsr_pgd_safesplit__best__pgd20": {
+    "metrics/precision(B)": 0.31891611176959045,
+    "metrics/recall(B)": 0.4325581395348837,
+    "metrics/mAP50(B)": 0.24608399907641007,
+    "metrics/mAP50-95(B)": 0.10680285346029192,
+    "fitness": 0.10680285346029192
+  },
+  "yolo26s_nslsr_pgd_safesplit__last__clean": {
+    "metrics/precision(B)": 0.8303693704488763,
+    "metrics/recall(B)": 0.8604651162790697,
+    "metrics/mAP50(B)": 0.8961357152068691,
+    "metrics/mAP50-95(B)": 0.6429717822188182,
+    "fitness": 0.6429717822188182
+  },
+  "yolo26s_nslsr_pgd_safesplit__last__pgd20": {
+    "metrics/precision(B)": 0.6813026242541009,
+    "metrics/recall(B)": 0.5674418604651162,
+    "metrics/mAP50(B)": 0.5021870668500751,
+    "metrics/mAP50-95(B)": 0.2429532443833528,
+    "fitness": 0.2429532443833528
+  }
+}

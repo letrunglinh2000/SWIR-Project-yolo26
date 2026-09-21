@@ -1,0 +1,58 @@
+{
+  "yolo26n_rasmd_clean__clean": {
+    "metrics/precision(B)": 0.8040639146722737,
+    "metrics/recall(B)": 0.6683712975987725,
+    "metrics/mAP50(B)": 0.7076456514126148,
+    "metrics/mAP50-95(B)": 0.4617759484606101,
+    "fitness": 0.4617759484606101
+  },
+  "yolo26n_rasmd_clean__pgd20": {
+    "metrics/precision(B)": 1.3127597623379726e-06,
+    "metrics/recall(B)": 0.0002440214738897023,
+    "metrics/mAP50(B)": 1.0595330425974665e-08,
+    "metrics/mAP50-95(B)": 1.0595330425974665e-09,
+    "fitness": 1.0595330425974665e-09
+  },
+  "yolo26s_rasmd_clean__clean": {
+    "metrics/precision(B)": 0.8182653980157655,
+    "metrics/recall(B)": 0.6968188410430435,
+    "metrics/mAP50(B)": 0.7385385474095608,
+    "metrics/mAP50-95(B)": 0.47052069947018116,
+    "fitness": 0.47052069947018116
+  },
+  "yolo26s_rasmd_clean__pgd20": {
+    "metrics/precision(B)": 7.869837563596928e-07,
+    "metrics/recall(B)": 7.332453438920664e-05,
+    "metrics/mAP50(B)": 4.104968982854366e-09,
+    "metrics/mAP50-95(B)": 1.2314906948563098e-09,
+    "fitness": 1.2314906948563098e-09
+  },
+  "yolo26n_rasmd_pgd__clean": {
+    "metrics/precision(B)": 0.7188876092146045,
+    "metrics/recall(B)": 0.5583470442259549,
+    "metrics/mAP50(B)": 0.6524448775849173,
+    "metrics/mAP50-95(B)": 0.4132231563991685,
+    "fitness": 0.4132231563991685
+  },
+  "yolo26n_rasmd_pgd__pgd20": {
+    "metrics/precision(B)": 0.352083496848105,
+    "metrics/recall(B)": 0.09818420838042052,
+    "metrics/mAP50(B)": 0.05101549603482891,
+    "metrics/mAP50-95(B)": 0.017570247678105076,
+    "fitness": 0.017570247678105076
+  },
+  "yolo26s_rasmd_pgd__clean": {
+    "metrics/precision(B)": 0.7661398897374063,
+    "metrics/recall(B)": 0.6986009912736293,
+    "metrics/mAP50(B)": 0.7044962563027691,
+    "metrics/mAP50-95(B)": 0.46088296782826,
+    "fitness": 0.46088296782826
+  },
+  "yolo26s_rasmd_pgd__pgd20": {
+    "metrics/precision(B)": 0.4640423829461911,
+    "metrics/recall(B)": 0.14026032667368168,
+    "metrics/mAP50(B)": 0.11127200065567423,
+    "metrics/mAP50-95(B)": 0.03642165657688772,
+    "fitness": 0.03642165657688772
+  }
+}

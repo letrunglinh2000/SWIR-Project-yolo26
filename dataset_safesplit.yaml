@@ -1,0 +1,7 @@
+path: D:/letrunglinh/1.Paper_IVCL/11.SWIR_Project/3.test/yolo26
+train: train_safesplit.txt
+val: val_safesplit.txt
+test: test_safesplit.txt
+
+nc: 1
+names: ['ship']

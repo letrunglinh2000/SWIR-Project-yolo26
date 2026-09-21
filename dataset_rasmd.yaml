@@ -1,0 +1,7 @@
+path: D:/letrunglinh/1.Paper_IVCL/11.SWIR_Project/3.test/yolo26
+train: RASMD/train_rasmd.txt
+val: RASMD/val_rasmd.txt
+test: RASMD/test_rasmd.txt
+
+nc: 6
+names: ['bicycle', 'bus', 'car', 'motorcycle', 'person', 'truck']

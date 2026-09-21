@@ -1,0 +1,12 @@
+{
+  "criterion": "Spec section 13.3: do not choose best.pt vs last.pt based on test robustness; use a predeclared validation-time rule.",
+  "per_defense_rule": {
+    "D0_standard": "best.pt (Ultralytics clean-fitness selection) -- no robustness objective during training, so clean-fitness selection is the correct rule, not an instance of the anti-pattern.",
+    "D1_pgd_at": "last.pt -- predeclared from a PRIOR finding on record (this project's own best.pt-vs-last.pt comparison on the leakage-safe split): last.pt is substantially more PGD-20-robust than best.pt for this adversarially-trained checkpoint. Decided before this evaluation ran, not fit to this evaluation's outcome.",
+    "D2_random_swir_aug": "robust_best.pt -- selected during training by RobustCheckpointSelector, S=0.5*mAP_clean+0.5*mAP_robust(SNUA-GO weak, 5 steps), tracked every epoch.",
+    "D3_snua_at": "robust_best.pt -- same rule as D2.",
+    "D5_mixed_swir_at": "robust_best.pt -- same rule as D2."
+  },
+  "lambda": 0.5,
+  "training_time_robust_probe_attack": "SNUA-GO weak severity, 5 steps (cheap; distinct from the 20-step evaluation-time attacks used in the final matrix)"
+}

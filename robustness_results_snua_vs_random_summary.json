@@ -1,0 +1,7 @@
+{
+  "clean_mAP50": 0.6940929148305854,
+  "exit_condition_met": {
+    "weak": true,
+    "medium": true
+  }
+}

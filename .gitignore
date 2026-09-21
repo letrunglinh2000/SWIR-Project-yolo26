@@ -1,0 +1,40 @@
+# --- big binaries: trained weights, base weights ---
+*.pt
+weights/
+runs/
+
+# --- datasets (redistributed under their own license) ---
+NSLSR/
+RASMD/
+
+# --- experiment tracker cache ---
+.cometml-runs/
+
+# --- logs and stderr dumps ---
+log_*.txt
+err*.txt
+*_log.txt
+*_log*.txt
+defense_matrix_test_log.txt
+rasmd_perclass_log.txt
+audit_out.txt
+pgd_grid_*.txt
+test_safesplit.txt.bak
+
+# --- python bytecode ---
+__pycache__/
+*.pyc
+*.pyo
+
+# --- editor / IDE ---
+.idea/
+.vscode/
+*.swp
+
+# --- local claude config (not part of the project) ---
+.claude/
+memory/
+
+# --- OS crud ---
+Thumbs.db
+.DS_Store

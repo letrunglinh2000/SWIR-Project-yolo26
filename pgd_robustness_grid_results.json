@@ -1,0 +1,114 @@
+{
+  "yolo26n_clean_best__clean": {
+    "metrics/precision(B)": 0.9853919713618285,
+    "metrics/recall(B)": 0.9740886658912454,
+    "metrics/mAP50(B)": 0.9930016888100985,
+    "metrics/mAP50-95(B)": 0.7690856577084177,
+    "fitness": 0.7690856577084177
+  },
+  "yolo26n_clean_best__pgd20": {
+    "metrics/precision(B)": 0.0002535496957403651,
+    "metrics/recall(B)": 0.01444043321299639,
+    "metrics/mAP50(B)": 4.019561867756414e-06,
+    "metrics/mAP50-95(B)": 5.049746270764552e-07,
+    "fitness": 5.049746270764552e-07
+  },
+  "yolo26n_clean_last__clean": {
+    "metrics/precision(B)": 0.9854819314022487,
+    "metrics/recall(B)": 0.9711191335740073,
+    "metrics/mAP50(B)": 0.9931004808686112,
+    "metrics/mAP50-95(B)": 0.771383100620748,
+    "fitness": 0.771383100620748
+  },
+  "yolo26n_clean_last__pgd20": {
+    "metrics/precision(B)": 0.0004496114072837048,
+    "metrics/recall(B)": 0.02527075812274368,
+    "metrics/mAP50(B)": 1.2199372603694668e-05,
+    "metrics/mAP50-95(B)": 1.7754214370073484e-06,
+    "fitness": 1.7754214370073484e-06
+  },
+  "yolo26n_pgd_best__clean": {
+    "metrics/precision(B)": 0.9818993726208768,
+    "metrics/recall(B)": 0.9675090252707581,
+    "metrics/mAP50(B)": 0.9834184970512014,
+    "metrics/mAP50-95(B)": 0.757151946059205,
+    "fitness": 0.757151946059205
+  },
+  "yolo26n_pgd_best__pgd20": {
+    "metrics/precision(B)": 0.7966966785874746,
+    "metrics/recall(B)": 0.7639489820585029,
+    "metrics/mAP50(B)": 0.8043387229734256,
+    "metrics/mAP50-95(B)": 0.3946221239027754,
+    "fitness": 0.3946221239027754
+  },
+  "yolo26n_pgd_last__clean": {
+    "metrics/precision(B)": 0.9818993726208768,
+    "metrics/recall(B)": 0.9675090252707581,
+    "metrics/mAP50(B)": 0.9834184970512014,
+    "metrics/mAP50-95(B)": 0.757151946059205,
+    "fitness": 0.757151946059205
+  },
+  "yolo26n_pgd_last__pgd20": {
+    "metrics/precision(B)": 0.7711263489173839,
+    "metrics/recall(B)": 0.779783393501805,
+    "metrics/mAP50(B)": 0.8014903891584148,
+    "metrics/mAP50-95(B)": 0.3862201794444276,
+    "fitness": 0.3862201794444276
+  },
+  "yolo26s_clean_best__clean": {
+    "metrics/precision(B)": 0.9854359341711731,
+    "metrics/recall(B)": 0.9770736821280609,
+    "metrics/mAP50(B)": 0.9844454508302384,
+    "metrics/mAP50-95(B)": 0.7690461827932518,
+    "fitness": 0.7690461827932518
+  },
+  "yolo26s_clean_best__pgd20": {
+    "metrics/precision(B)": 0.00012350216323081387,
+    "metrics/recall(B)": 0.0036101083032490976,
+    "metrics/mAP50(B)": 2.0408163265306125e-06,
+    "metrics/mAP50-95(B)": 2.0408163265306124e-07,
+    "fitness": 2.0408163265306124e-07
+  },
+  "yolo26s_clean_last__clean": {
+    "metrics/precision(B)": 0.9890499210337937,
+    "metrics/recall(B)": 0.9782336861249616,
+    "metrics/mAP50(B)": 0.9845575757575759,
+    "metrics/mAP50-95(B)": 0.7703228875849037,
+    "fitness": 0.7703228875849037
+  },
+  "yolo26s_clean_last__pgd20": {
+    "metrics/precision(B)": 0.00023184821670079988,
+    "metrics/recall(B)": 0.021660649819494584,
+    "metrics/mAP50(B)": 5.995443462968144e-06,
+    "metrics/mAP50-95(B)": 7.788522179123784e-07,
+    "fitness": 7.788522179123784e-07
+  },
+  "yolo26s_pgd_best__clean": {
+    "metrics/precision(B)": 0.9819978553541453,
+    "metrics/recall(B)": 0.9846403244774836,
+    "metrics/mAP50(B)": 0.9942009150670331,
+    "metrics/mAP50-95(B)": 0.7626526397727316,
+    "fitness": 0.7626526397727316
+  },
+  "yolo26s_pgd_best__pgd20": {
+    "metrics/precision(B)": 0.9290951860744943,
+    "metrics/recall(B)": 0.8987906393210172,
+    "metrics/mAP50(B)": 0.9308486716282935,
+    "metrics/mAP50-95(B)": 0.5498886611118474,
+    "fitness": 0.5498886611118474
+  },
+  "yolo26s_pgd_last__clean": {
+    "metrics/precision(B)": 0.9853528312399532,
+    "metrics/recall(B)": 0.9891696750902527,
+    "metrics/mAP50(B)": 0.9943716860421697,
+    "metrics/mAP50-95(B)": 0.765539194093559,
+    "fitness": 0.765539194093559
+  },
+  "yolo26s_pgd_last__pgd20": {
+    "metrics/precision(B)": 0.9410626173090595,
+    "metrics/recall(B)": 0.8953068592057761,
+    "metrics/mAP50(B)": 0.9338461674105707,
+    "metrics/mAP50-95(B)": 0.5491860450265631,
+    "fitness": 0.5491860450265631
+  }
+}

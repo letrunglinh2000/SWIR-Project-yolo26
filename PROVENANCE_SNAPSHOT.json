@@ -1,0 +1,47 @@
+{
+  "snapshot_time_utc": "2026-09-18T07:41:12.043563",
+  "git_available": false,
+  "note": "git CLI not on PATH in this sandbox; using SHA256 file hashes + mtimes as substitute provenance.",
+  "files": {
+    "train.py": {
+      "sha256": "c973ad5adf3b9967",
+      "mtime": "2026-09-16T21:30:00.671051",
+      "size": 5820
+    },
+    "train_attack.py": {
+      "sha256": "a3ef9aac4f5a8e21",
+      "mtime": "2026-09-16T21:45:25.215715",
+      "size": 19290
+    },
+    "test_attack.py": {
+      "sha256": "92d926636858d16e",
+      "mtime": "2026-09-17T17:20:32.729021",
+      "size": 17045
+    },
+    "test_yolo.py": {
+      "sha256": "bc2de10ff53cec6b",
+      "mtime": "2026-09-17T17:18:13.602099",
+      "size": 2576
+    },
+    "dataset.yaml": {
+      "sha256": "e9476ac53d9f64d6",
+      "mtime": "2026-09-17T17:20:35.998104",
+      "size": 145
+    },
+    "dataset_safesplit.yaml": {
+      "sha256": "e9921087511be38a",
+      "mtime": "2026-09-17T19:33:07.794746",
+      "size": 169
+    },
+    "pgd_robustness_grid_safesplit_full.py": {
+      "sha256": "000b9881ec7eeb31",
+      "mtime": "2026-09-18T14:26:26.476634",
+      "size": 5904
+    },
+    "pgd_robustness_grid_rasmd_full.py": {
+      "sha256": "9e53413005f0189c",
+      "mtime": "2026-09-18T14:26:42.452599",
+      "size": 5856
+    }
+  }
+}

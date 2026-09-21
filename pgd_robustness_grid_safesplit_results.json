@@ -1,0 +1,58 @@
+{
+  "yolo26n_safesplit_clean__clean": {
+    "metrics/precision(B)": 0.8697219464197339,
+    "metrics/recall(B)": 0.8383717700341197,
+    "metrics/mAP50(B)": 0.9311314838006097,
+    "metrics/mAP50-95(B)": 0.648270509258704,
+    "fitness": 0.648270509258704
+  },
+  "yolo26n_safesplit_clean__pgd20": {
+    "metrics/precision(B)": 0.0002869497622909157,
+    "metrics/recall(B)": 0.004651162790697674,
+    "metrics/mAP50(B)": 1.4059383829517783e-05,
+    "metrics/mAP50-95(B)": 2.0192707161792177e-06,
+    "fitness": 2.0192707161792177e-06
+  },
+  "yolo26n_safesplit_pgd__clean": {
+    "metrics/precision(B)": 0.8753864452376982,
+    "metrics/recall(B)": 0.8465116279069768,
+    "metrics/mAP50(B)": 0.9299120436685657,
+    "metrics/mAP50-95(B)": 0.6225190227502606,
+    "fitness": 0.6225190227502606
+  },
+  "yolo26n_safesplit_pgd__pgd20": {
+    "metrics/precision(B)": 0.4537121970104462,
+    "metrics/recall(B)": 0.4511627906976744,
+    "metrics/mAP50(B)": 0.36686473007470854,
+    "metrics/mAP50-95(B)": 0.12604162756321988,
+    "fitness": 0.12604162756321988
+  },
+  "yolo26s_safesplit_clean__clean": {
+    "metrics/precision(B)": 0.8490511857971076,
+    "metrics/recall(B)": 0.8110174908044792,
+    "metrics/mAP50(B)": 0.8979241271903725,
+    "metrics/mAP50-95(B)": 0.6099374563279768,
+    "fitness": 0.6099374563279768
+  },
+  "yolo26s_safesplit_clean__pgd20": {
+    "metrics/precision(B)": 0.0,
+    "metrics/recall(B)": 0.0,
+    "metrics/mAP50(B)": 0.0,
+    "metrics/mAP50-95(B)": 0.0,
+    "fitness": 0.0
+  },
+  "yolo26s_safesplit_pgd__clean": {
+    "metrics/precision(B)": 0.9330928678783298,
+    "metrics/recall(B)": 0.7783923267596075,
+    "metrics/mAP50(B)": 0.9159863584142411,
+    "metrics/mAP50-95(B)": 0.6169034367832678,
+    "fitness": 0.6169034367832678
+  },
+  "yolo26s_safesplit_pgd__pgd20": {
+    "metrics/precision(B)": 0.3286915088543112,
+    "metrics/recall(B)": 0.44651162790697674,
+    "metrics/mAP50(B)": 0.2583477070675379,
+    "metrics/mAP50-95(B)": 0.11210349231342243,
+    "fitness": 0.11210349231342243
+  }
+}
