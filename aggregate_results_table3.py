@@ -103,6 +103,38 @@ def load_defense_matrix(path: Path):
     return rows
 
 
+def load_all_evals(path: Path):
+    """Read run_missing_evals.py's streaming CSV. Rows there are already
+    per-seed; group and collapse to mean/std in the same shape as the D-matrix."""
+    if not path.exists():
+        print(f"[skip] {path.name} not present")
+        return []
+    groups = defaultdict(list)
+    with open(path, newline="") as f:
+        for r in csv.DictReader(f):
+            key = (r["dataset"], r["split_variant"], r["model"], r["training"],
+                   r["checkpoint"], r["eval_split"], r["attack"])
+            groups[key].append(r)
+    rows = []
+    for key, recs in groups.items():
+        agg = {}
+        for m in METRICS:
+            vals = [_f(x[m]) for x in recs if _f(x[m]) is not None]
+            agg[m] = statistics.mean(vals) if vals else None
+            agg[f"{m}_std"] = statistics.stdev(vals) if len(vals) > 1 else ""
+        (ds, sv, model, training, ckpt, eval_split, attack) = key
+        bias = ""
+        if eval_split == "val" and ckpt in {"best", "robust_best"}:
+            bias = "checkpoint selected on this split"
+        rows.append({
+            "dataset": ds, "split_variant": sv, "model": model, "training": training,
+            "checkpoint": ckpt, "eval_split": eval_split, "attack": attack,
+            "n_seeds": len(recs), **agg,
+            "selection_bias": bias, "source": path.name,
+        })
+    return rows
+
+
 def sort_key(r):
     ds = {"NSLSR": 0, "RASMD": 1}.get(r["dataset"], 2)
     sp = {"official (leaky)": 0, "leakage-safe (segment)": 1, "stratified (own)": 2}.get(r["split_variant"], 3)
@@ -117,6 +149,19 @@ def main():
     rows = load_table2()
     for name in ["defense_matrix_results.csv", "defense_matrix_results_test.csv"]:
         rows += load_defense_matrix(REPO / name)
+    rows += load_all_evals(REPO / "all_evals_results.csv")
+
+    # dedupe: (dataset, split_variant, model, training, checkpoint, eval_split, attack)
+    # -- if the all_evals CSV re-measured a cell the D-matrix also has, keep
+    # whichever row has more seeds (typically the newer all_evals row).
+    dedup = {}
+    for r in rows:
+        key = (r["dataset"], r["split_variant"], r["model"], r["training"],
+               r["checkpoint"], r["eval_split"], r["attack"])
+        existing = dedup.get(key)
+        if existing is None or (r.get("n_seeds", 1) or 1) > (existing.get("n_seeds", 1) or 1):
+            dedup[key] = r
+    rows = list(dedup.values())
     rows.sort(key=sort_key)
 
     out = REPO / "aggregate_results_table3.csv"

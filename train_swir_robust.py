@@ -78,7 +78,18 @@ def build_scheduler(name: str, adv_ratio: float) -> AttackScheduler:
                 "combined": lambda: CombinedSNUAARIAAttack(_cheap(SNUA_SEVERITIES, "medium"), _cheap(ARIA_SEVERITIES, "medium")),
             },
         )
-    raise ValueError(f"unknown scheduler '{name}' (choices: d2, d3_snua, d4_aria, d5_mixed)")
+    if name == "d6_combined_at":
+        # Adversarial training on the combined SNUA+ARIA attack ONLY (no schedule
+        # mix). Fair baseline for "does D5's 4-way schedule beat plain
+        # combined-AT?" -- both use the same combined attack for the adversarial
+        # half of each batch; D6 has no aria-alone or snua_go-alone entries.
+        return AttackScheduler(
+            weights={"clean": 1 - adv_ratio, "combined": adv_ratio},
+            factories={
+                "combined": lambda: CombinedSNUAARIAAttack(_cheap(SNUA_SEVERITIES, "medium"), _cheap(ARIA_SEVERITIES, "medium")),
+            },
+        )
+    raise ValueError(f"unknown scheduler '{name}' (choices: d2, d3_snua, d4_aria, d5_mixed, d6_combined_at)")
 
 
 def main():
@@ -86,7 +97,7 @@ def main():
     p.add_argument("--model", required=True)
     p.add_argument("--data", required=True)
     p.add_argument("--name", required=True)
-    p.add_argument("--scheduler", required=True, choices=["d2", "d3_snua", "d4_aria", "d5_mixed"])
+    p.add_argument("--scheduler", required=True, choices=["d2", "d3_snua", "d4_aria", "d5_mixed", "d6_combined_at"])
     p.add_argument("--adv-ratio", type=float, default=0.5)
     p.add_argument("--val-split", default="val")
     p.add_argument("--robust-lambda", type=float, default=0.5)

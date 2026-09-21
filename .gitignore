@@ -38,3 +38,10 @@ memory/
 # --- OS crud ---
 Thumbs.db
 .DS_Store
+
+# --- long-running driver artefacts ---
+all_evals_log.txt
+run_all_missing_master.log
+run_all_missing_driver.out
+train_log_*.txt
+defense_matrix_val_log.txt
